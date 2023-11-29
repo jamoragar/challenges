@@ -1,1 +1,1 @@
-# Spiced Challenges Repo
+## My academy challenges repo 💪🏻
