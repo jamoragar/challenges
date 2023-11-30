@@ -17,6 +17,9 @@ h2{
 .profile-img{
   border-radius: 22px;
 }
+.subtitle{
+  font-size: 18px;
+}
 .account-link{
   color:gray
 }
