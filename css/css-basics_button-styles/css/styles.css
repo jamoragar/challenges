@@ -29,7 +29,7 @@ button {
 
 /* Add your CSS styles below this line. Feel free to replace the comments with your code. Make sure not to put your code into the comments, because then nothing will happen. */
 
-button:hover{
+button :hover {
   color: blue;
 }
 .button1 {
@@ -55,7 +55,10 @@ button:hover{
   /*Style me! Can you add a shadow to this button? Maybe play around with the shadow properties, as well? You can even color the shadow, make it bigger or smaller, ... */
 }
 
-.button1:hover, .button2:hover, .button3:hover, .button4:hover{
+.button1 :hover,
+.button2 :hover,
+.button3 :hover,
+.button4 :hover {
   background-color: rgb(226, 197, 226);
 }
 
