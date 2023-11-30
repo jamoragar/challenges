@@ -29,20 +29,34 @@ button {
 
 /* Add your CSS styles below this line. Feel free to replace the comments with your code. Make sure not to put your code into the comments, because then nothing will happen. */
 
+button:hover{
+  color: blue;
+}
 .button1 {
+  border-radius: 20px;
+  border-color: red;
   /*Style me! Change my border, set a border radius or what you want to try out. :) */
 }
 
 .button2 {
+  color: blue;
+  background-color: azure;
   /*Style me! Change my color, or my background-color. Or both! You can test out different color modes here - like HEX, RGB, ... */
 }
 
 .button3 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   /*Style me! You can test out changing the font, or font size, ...*/
 }
 
 .button4 {
+  box-shadow: 0px 8px 8px rgba(174, 29, 29, 0.3);
   /*Style me! Can you add a shadow to this button? Maybe play around with the shadow properties, as well? You can even color the shadow, make it bigger or smaller, ... */
+}
+
+.button1:hover, .button2:hover, .button3:hover, .button4:hover{
+  background-color: rgb(226, 197, 226);
 }
 
 /* Feel free to play around with other properties, as well. */
