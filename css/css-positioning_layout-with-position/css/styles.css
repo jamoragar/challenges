@@ -7,7 +7,7 @@
 body {
   display: flex;
   flex-direction: column;
-  margin: 80px 0 45px 0;
+  margin: 80px 0 0 0;
   font-family: system-ui;
 }
 
@@ -17,6 +17,9 @@ body {
  * document is scrolled.
  */
 .header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
   background: #140523;
   color: #ffffff;
   height: 80px;
@@ -38,6 +41,9 @@ body {
  * document is scrolled.
  */
 .footer {
+  position: relative;
+  bottom: 0;
+  width: 100vw;
   background: #140523;
   color: #ffffff;
   height: 48px;
@@ -48,6 +54,7 @@ body {
  * Define the card as reference frame for descendant elements, that require absolute positioning.
  */
 .card {
+  position: relative;
   margin: 20px 10%;
   border: 5px solid #252629;
   padding: 3% 10%;
@@ -63,6 +70,9 @@ body {
  * Place the bookmark in the top, right corner of each card.
  */
 .card__bookmark {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   border: 2px solid #ff4a11;
   font-size: 2em;
   padding: 6px 12px;
@@ -75,6 +85,10 @@ body {
  * unaffected when the document is scrolled.
  */
 .goto-top {
+  position: sticky;
+  bottom: 20px;
+  left: 8px;
+  margin-bottom: 8px;
   width: 48px;
   height: 48px;
   padding: 8px;
