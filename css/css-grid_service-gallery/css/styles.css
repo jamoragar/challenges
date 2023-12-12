@@ -38,6 +38,8 @@ body {
   max-width: 900px;
   padding: 2rem;
   margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
 
   /* Add styles to the container */
 }
