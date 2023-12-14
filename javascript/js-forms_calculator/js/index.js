@@ -22,11 +22,27 @@ function divide(a, b) {
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
+  const numberA = Number(data.numberA);
+  const numberB = Number(data.numberB);
   let result;
 
-  // --v-- write your code here --v--
-
-  // --^-- write your code here --^--
+  switch(data.operator){
+    case "addition":
+      result = add(numberA, numberB);
+      break;
+    case "subtraction":
+      result = subtract(numberA, numberB); 
+      break;       
+    case "multiplication":
+      result = multiply(numberA, numberB);  
+      break;  
+    case "division":
+      result = divide(numberA, numberB);     
+      break;   
+    default: return;
+  }
 
   resultOutput.textContent = result;
 });
