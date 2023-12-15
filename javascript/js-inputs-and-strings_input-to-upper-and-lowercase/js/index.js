@@ -12,6 +12,8 @@ Hint: Access the value by using `.value` on the input element
 
 */
 
+
+
 const input = document.querySelector('[data-js="first-input"]');
 const uppercaseButton = document.querySelector('[data-js="button-uppercase"]');
 
