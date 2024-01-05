@@ -91,11 +91,19 @@ const indexOfAnimalWithNameLongerFive = animals.findIndex(animal => animal.name.
 // Hint: sort() mutates the original array, which is bad.
 // -> Use animals.slice().sort(...) to make a copy (and the tests work).
 
-const animalsSortedAlphabetically = animals.slice().sort((a, b) => a.name < b.name ? -1 : 1);
+const animalsSortedAlphabetically = animals.slice().sort((a, b) => {
+  if(a.name < b.name) return -1
+  if(a.name > b.name) return 1
+  return 0
+});
 
 const animalsSortedByWeightStartingWithLowest = animals.slice().sort((a, b) => a.weight < b.weight ? -1 : 1);
 
-const animalsSortedByWeightReversed = animals.slice().sort((a, b) => a.weight > b.weight ? -1 : 1);
+const animalsSortedByWeightReversed = animals.slice().sort((a, b) => {
+  if(a.weight > b.weight) return -1;
+  if(a.weight < b.weight) return 1;
+  return 0;
+});
 
 const animalWithWeightMoreThanFivehundredExists = animals.slice().some(animal => animal.weight > 500);
 
