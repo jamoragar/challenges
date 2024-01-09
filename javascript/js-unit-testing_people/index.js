@@ -21,14 +21,12 @@ export function getPeopleByAge(people, age) {
 export function getPeopleNamesOlderThan(people, age) {
   const peopleOlderThan = people.filter(person => person.age > age);
 
-  return peopleOlderThan
-    .map(people => `${people.firstName} ${people.lastName}`)
+  return getFullNames(peopleOlderThan);
 }
 
 export function getPeopleByLastName(people, lastName) {
-  return people
-    .filter(people => people.lastName === lastName)
-    .map(people => `${people.firstName} ${people.lastName}`);
+  const filteredPeople = people.filter(person => person.lastName === lastName)
+  return getFullNames(filteredPeople)
 }
 
 export function findPersonById(people, id) {
@@ -42,7 +40,6 @@ export function isAnyoneOlderThan(people, age) {
 }
 
 export function getFullNamesSortedByAge(people) {
-  const sortedPeople = [...people].sort((a, b) => a.age - b.age);
-  return sortedPeople
-    .map(person => `${person.firstName} ${person.lastName}`);
+  const sortedPeople = people.sort((a, b) => a.age - b.age);
+  return getFullNames(sortedPeople);
 }
