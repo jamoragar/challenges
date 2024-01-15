@@ -7,7 +7,7 @@ export default function App() {
 
 function Article() {
   return (
-    <article>
+    <article className="article">
       <h2 className="article__title">My title!</h2>
       <label htmlFor="myInput">My Input</label>
       <input id="myInput" type="text" name="myInput" />
