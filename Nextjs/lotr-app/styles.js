@@ -11,4 +11,9 @@ export default createGlobalStyle`
     margin: 0;
     font-family: system-ui;
   }
+  section {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
 `;
